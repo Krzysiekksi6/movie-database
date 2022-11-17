@@ -5,4 +5,26 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
 		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
 		sans-serif;
+    background-color: #393E46;
+  }
+
+
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #222831;
+    
 }
+
+header {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  height: 75vh;
+  background-color: #393E46;
+}
+
+
