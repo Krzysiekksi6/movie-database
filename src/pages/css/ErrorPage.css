@@ -1,3 +1,4 @@
+
 .header {
 	position: relative;
 	display: flex;
@@ -49,7 +50,6 @@
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	border-radius: 15px;
 }
 
 .header__hero-shadow {

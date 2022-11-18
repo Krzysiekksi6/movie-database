@@ -1,5 +1,8 @@
+import './css/Content.css'
 const Content = () => {
-	return <div></div>;
+	return (<main>
+
+	</main>);
 };
 
 export default Content;

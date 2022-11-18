@@ -27,7 +27,7 @@ const NavigationBar = () => {
 						<img src={logo} alt='filweb logo' width='60' height='30' />
 						{brand}
 					</Navbar.Brand>
-					<div className='d-flex box'>
+					<div className='d-flex box SearchBar'>
 						<Form>
 							<Row>
 								<Col xs="auto">
