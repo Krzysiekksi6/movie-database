@@ -1,10 +1,16 @@
 import './css/ErrorPage.css';
-const ErrorPage = () => {
 
+const ErrorPage = () => {
 	return (
 		<div className='header'>
 			<div className='header__text'>
-				<h1 className='header__heading'>4<span><i class="fa-regular fa-face-frown"></i></span>4</h1>
+				<h1 className='header__heading'>
+					4
+					<span>
+						<i class='fa-regular fa-face-frown'></i>
+					</span>
+					4
+				</h1>
 				<h2 className='header__description--first'>opps! page not found</h2>
 				<p className='header__description--second'>
 					Sorry, the page you're looking for doesn't exist. If you think

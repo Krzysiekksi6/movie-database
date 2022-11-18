@@ -1,10 +1,12 @@
+import NavigationBar from '../components/NavigationBar';
+
+import './css/Home.css';
 
 const Home = () => {
     return(
-        <div>
-            {/* <Navbar/>
-            <Content/>
-            <Footer/> */}
+        <div className='home'>
+            <NavigationBar/>
+            
         </div>
     );
 }
