@@ -23,18 +23,21 @@
 	align-items: center;
 	flex-direction: column;
 	position: absolute;
+    margin-top: 20px;
 	top: 10%;
 	z-index: 10;
 }
 
 .header__heading {
-	margin: 20px;
+	margin:20px 0;
 	font-size: 6rem;
 }
 
 .header__description--first {
 	text-transform: uppercase;
 	font-weight: bold;
+	font-size: 1.8rem;
+
 }
 
 .header__description--second {
