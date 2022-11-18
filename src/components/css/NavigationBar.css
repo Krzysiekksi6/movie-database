@@ -1,3 +1,32 @@
-.tlo {
-    background-color: #333;
+.text {
+	color: #EEEEEE;
+}
+
+span {
+	text-transform: uppercase;
+	transition: color 0.3s;
+}
+
+.text-second {
+	color: #00adb5;
+}
+
+img:hover ~ span,
+span:hover{
+	color: #00adb5;
+}
+
+.login-btn {
+	background: transparent;
+	border: 1px solid #00adb5;
+	border-radius: 8px;
+	color: #eeeeee;
+	cursor: pointer;
+    transition: color .3s background-color .3s border .3s;
+}
+
+.login-btn:hover {
+    background-color: #00adb5;
+    color: #222831;
+    border: 1px solid transparent;
 }
