@@ -30,7 +30,12 @@
 
 .header__heading {
 	margin:20px 0;
+	letter-spacing: 10px;
 	font-size: 6rem;
+}
+
+.fa-regular {
+	font-size: 5rem;
 }
 
 .header__description--first {
@@ -48,7 +53,7 @@
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background-image: url('../img/error-page.png');
+	background-image: url('../../img/error-page.png');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
