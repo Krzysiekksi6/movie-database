@@ -1,6 +1,8 @@
 # Preview
 
-![alt text](./src/img/error-page.png)
+## Not Found Page
+
+![alt text](./preview/not-found.png)
 
 # Getting Started with Create React App
 
