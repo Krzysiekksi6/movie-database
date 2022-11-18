@@ -1,12 +1,12 @@
-import logo from './logo.svg';
-
+import { Route, Routes } from 'react-router-dom';
+import ErrorPage from './pages/ErrorPage';
 function App() {
-  return (
-    <div>
-     <nav></nav>
-     <header></header>
-     <main></main>
-    </div>
+	// localhost:3000
+	// movie-db.com/id
+	return (
+    <Routes>
+      <Route path="/error" element={<ErrorPage />} />
+    </Routes>
   );
 }
 
