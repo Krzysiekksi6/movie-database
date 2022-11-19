@@ -32,12 +32,14 @@
 }
 
 .header__description--first {
+	margin-top: 30px;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 1.8rem;
 }
 
 .header__description--second {
+	margin-top: 40px;
 	font-size: 1.4rem;
 }
 
@@ -86,7 +88,7 @@
 }
 
 .header__btn {
-	margin-top: 2em;
+	margin-top: 1em;
 	padding: 0.8em 1.6em;
 	font-size: 1.4rem;
 	background: #00adb5;

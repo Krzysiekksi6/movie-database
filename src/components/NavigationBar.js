@@ -1,3 +1,4 @@
+// Bootstrap Imports
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -5,7 +6,9 @@ import Col from 'react-bootstrap/Col';
 import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
 import 'bootstrap/dist/css/bootstrap.min.css';
+// My Own Imports
 import './css/NavigationBar.css';
+import SearchBar from './SearchBar'
 import logo from './video.svg';
 import { COLORS } from '../values/colors';
 
@@ -27,6 +30,9 @@ const NavigationBar = () => {
 						<img src={logo} alt='filweb logo' width='60' height='30' />
 						{brand}
 					</Navbar.Brand>
+					{/*<SearchBar/>
+					TODO SearchBar
+					*/}
 					<div className='d-flex box SearchBar'>
 						<Form>
 							<Row>
