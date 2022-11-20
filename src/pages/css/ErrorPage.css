@@ -61,6 +61,23 @@
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
+a, a:link, a:visited {
+	color: #eeeeee;
+  }
+
+.header__btn {
+	margin-top: 1em;
+	padding: 0.8em 1.6em;
+	font-size: 1.4rem;
+	background: #00adb5;
+	border: none;
+	border-radius: 8px;
+	color: #eeeeee;
+	text-decoration: none;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
 .btn-special-animation {
 	position: relative;
 	transition: background-color 0.3s;
@@ -82,24 +99,13 @@
 	z-index: -1;
 }
 
+.header__btn::before {
+	background-color: rgba(211, 211, 211, 0.5);
+}
+
 .btn-special-animation:hover::before {
 	transform: scaleX(1);
 	transform-origin: left;
 }
 
-.header__btn {
-	margin-top: 1em;
-	padding: 0.8em 1.6em;
-	font-size: 1.4rem;
-	background: #00adb5;
-	border: none;
-	border-radius: 8px;
-	color: #eeeeee;
-	text-decoration: none;
-	text-transform: uppercase;
-	cursor: pointer;
-}
 
-.header__btn::before {
-	background-color: rgba(211, 211, 211, 0.5);
-}
