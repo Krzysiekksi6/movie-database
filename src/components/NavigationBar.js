@@ -23,11 +23,12 @@ const NavigationBar = () => {
 	);
 
 	return (
+		<div className="navigation-bar">
 		<Container style={{ color: COLORS.whiteColor }}>
 			<Navbar expand='md' fixed='top' style={{ backgroundColor: COLORS.dark }}>
 				<Container className='d-flex justify-content-between'>
 					<Navbar.Brand href='/'>
-						<img src={logo} alt='filweb logo' width='60' height='30' />
+						<img className="navigation-bar__logo" src={logo} alt='filweb logo' width='60' height='30' />
 						{brand}
 					</Navbar.Brand>
 					{/*<SearchBar/>
@@ -53,6 +54,7 @@ const NavigationBar = () => {
 				</Container>
 			</Navbar>
 		</Container>
+		</div>
 	);
 };
 

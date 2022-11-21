@@ -1,0 +1,25 @@
+.movie-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    background-color: #222831;
+    padding: 10px 20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.movie-img {
+    width: 100px;
+    height: 100%;
+}
+
+.movie-card__text {
+    margin: 30px;
+}
+
+.rate-symbol {
+    color: gold;
+    font-size: 1.6rem;
+}

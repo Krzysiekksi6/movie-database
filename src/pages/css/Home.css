@@ -1,1 +1,7 @@
-
+.home {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    color: #EEEEEE;
+    width: 100%;
+    height: 100%;
+}

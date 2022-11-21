@@ -7,7 +7,7 @@ const ErrorPage = () => {
 				<h1 className='header__heading'>
 					4
 					<span>
-						<i className='fa-regular fa-face-frown'></i>
+						<i className='fa-regular fa-face-frown movie-logo'></i>
 					</span>
 					4
 				</h1>

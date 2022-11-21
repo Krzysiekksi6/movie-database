@@ -1,3 +1,6 @@
+.navigation-bar {
+	height: 60px;
+}
 .text {
 	color: #EEEEEE;
 }
@@ -13,7 +16,7 @@ span {
 	color: #00adb5;
 }
 
-img:hover ~ span,
+.navigation-bar__logo:hover ~ span,
 span:hover{
 	color: #00adb5;
 }
@@ -25,7 +28,7 @@ span:hover{
 	border-radius: 8px;
 	color: #eeeeee;
 	cursor: pointer;
-    transition: color .3s background-color .3s border .3s;
+    transition: color .3s, background-color .3s, border .3s;
 }
 
 .btn-nav--search {

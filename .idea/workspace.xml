@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32adebf2-3f42-493a-b527-594021010612" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/MovieCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/css/MovieCard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/zielona-mila.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/css/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/css/Card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/css/Content.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/css/Content.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/css/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/css/Footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/css/NavigationBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/css/NavigationBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/ErrorPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ErrorPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/ErrorPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/ErrorPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/Home.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +25,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -32,6 +54,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\krzys\Desktop\Academic Projects\Web Application Technologies\film-web\src\img" />
       <recent name="C:\Users\krzys\Desktop\Academic Projects\Web Application Technologies\film-web\preview" />
     </key>
   </component>
@@ -44,6 +67,8 @@
       <option name="presentableId" value="Default" />
       <updated>1668860138894</updated>
       <workItem from="1668860142945" duration="1629000" />
+      <workItem from="1669028729240" duration="594000" />
+      <workItem from="1669035104740" duration="7336000" />
     </task>
     <servers />
   </component>
