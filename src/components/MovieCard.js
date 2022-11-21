@@ -11,7 +11,7 @@ return(
         <div className="movie-card__text">
             <h2>{props.item.title}</h2>
             <p>{props.item.releaseDate}, {props.item.director}</p>
-            <h3>{props.item.duration},{props.item.filmGenere}</h3>
+            <h4npm>{props.item.duration},{props.item.filmGenere}</h4npm>
             <p><span><i className="fa-regular fa-star rate-symbol"></i></span> {props.item.rates}</p>
         </div>
 
