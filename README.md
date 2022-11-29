@@ -4,13 +4,17 @@
 
 ![alt text](./preview/not-found.png)
 
+## Not Main Page Desktop
+
+![alt text](./preview/part-3.png)
+
 ## Not Main Page Mobile
 
 ![alt text](./preview/main-phone.png)
 
-## Not Main Page Desktop
+## Not Main Page Mobile Nav
 
-![alt text](./preview/part-3.png)
+![alt text](./preview/main-phone-2.png)
 
 # Getting Started with Create React App
 
