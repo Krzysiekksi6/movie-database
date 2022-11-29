@@ -1,5 +1,4 @@
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import { Link } from 'react-router-dom';
 // Bootstrap Imports
@@ -7,12 +6,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
-import Col from 'react-bootstrap/Col';
 import Navbar from 'react-bootstrap/Navbar';
-import Row from 'react-bootstrap/Row';
 // My Own Imports
 import './css/NavigationBar.css';
-import SearchBar from './SearchBar';
 import logo from './video.svg';
 import { COLORS } from '../values/colors';
 

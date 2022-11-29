@@ -1,16 +1,13 @@
 body {
-	position: relative;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
+	overflow: hidden;
+}
+
+#root {
+	width: 100vw;
 	height: 100vh;
+	overflow: hidden;
 }
-
-.wrapper {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1200px;
-}
-
-
