@@ -1,4 +1,5 @@
-.login, .register {
+.login,
+.register {
 	position: relative;
 	color: #eeeeee;
 	height: 100%;
@@ -64,4 +65,52 @@
 .login__form-btn:hover {
 	background-color: #00adb5;
 	color: #222831;
+}
+
+@media (min-width: 576px) {
+	.login,
+	.register {
+		padding-left: 6em;
+		padding-right: 6em;
+	}
+
+	.login__form,
+	.login-heading {
+		margin-top: 20px;
+	}
+}
+
+@media (min-width: 768px) {
+	.login,
+	.register {
+		padding: 7em 6em;
+	}
+
+	.login__form,
+	.login-heading {
+		margin-top: 15px;
+	}
+}
+
+@media (min-width: 992px) {
+	.login,
+	.register {
+		padding-left: 8em;
+		padding-right: 8em;
+	}
+
+	.login__form,
+	.login-heading {
+		margin-top: 10px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.login__form-top {
+		max-width: 900px;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+
 }
