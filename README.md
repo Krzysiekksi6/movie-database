@@ -4,6 +4,14 @@
 
 ![alt text](./preview/not-found.png)
 
+## Not Main Page Mobile
+
+![alt text](./preview/main-phone.png)
+
+## Not Main Page Desktop
+
+![alt text](./preview/part-3.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
