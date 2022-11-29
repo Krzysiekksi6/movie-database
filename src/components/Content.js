@@ -53,6 +53,14 @@ const Content = () => {
 				<MovieCard item={movies[1]}/>
 				<MovieCard item={movies[2]}/>
 
+			<MovieCard item={movies[0]}/>
+			<MovieCard item={movies[1]}/>
+			<MovieCard item={movies[2]}/>
+
+			<MovieCard item={movies[0]}/>
+			<MovieCard item={movies[1]}/>
+			<MovieCard item={movies[2]}/>
+
 
 	</div>);
 };

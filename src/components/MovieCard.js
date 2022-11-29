@@ -2,7 +2,7 @@ import Card from './Card'
 import './css/MovieCard.css'
 
 const MovieCard = (props) => {
-    const imgUrl = props.item.photo;
+    
 return(
     <div className="movie-card">
         <div className="movie-card__img">

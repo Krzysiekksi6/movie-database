@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './css/ErrorPage.css';
 
 const ErrorPage = () => {
@@ -19,6 +21,8 @@ const ErrorPage = () => {
 				<a href='/' className='header__btn btn-special-animation'>
 					return home
 				</a>
+				<Link to="/">Kliknij mnieee</Link>
+
 			</div>
 
 			<div className='header__hero-img'></div>
