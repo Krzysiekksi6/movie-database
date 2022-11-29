@@ -1,9 +1,5 @@
 # Preview
 
-## Not Found Page
-
-![alt text](./preview/not-found.png)
-
 ## Main Page Desktop
 
 ![alt text](./preview/part-3.png)
@@ -24,6 +20,9 @@
 
 ![alt text](./preview/login-phone.png)
 
+## Not Found Page
+
+![alt text](./preview/not-found.png)
 
 # Getting Started with Create React App
 
