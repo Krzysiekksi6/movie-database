@@ -19,6 +19,7 @@
 	position: absolute;
 	top: 10%;
 	z-index: 10;
+	padding: 1em 2em;
 }
 
 .header__heading {
@@ -61,14 +62,16 @@
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
-a, a:link, a:visited {
+a,
+a:link,
+a:visited {
 	color: #eeeeee;
-  }
+}
 
 .header__btn {
 	margin-top: 1em;
-	padding: 0.8em 1.6em;
-	font-size: 1.4rem;
+	padding: 0.6em 1.2em;
+	font-size: 1.2rem;
 	background: #00adb5;
 	border: none;
 	border-radius: 8px;
@@ -108,4 +111,9 @@ a, a:link, a:visited {
 	transform-origin: left;
 }
 
-
+@media (min-width: 768px) {
+	.header__text {
+		padding: 1em 2em;
+		font-size: 4.8rem;
+	}
+}

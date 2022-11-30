@@ -13,15 +13,12 @@ const ErrorPage = () => {
 					</span>
 					4
 				</h1>
-				<h2 className='header__description--first'>opps! page not found</h2>
+				<h2 className='header__description--first'>opps! Nie znaleziono strony</h2>
 				<p className='header__description--second'>
-					Sorry, the page you're looking for doesn't exist. If you think
-					something is broken report a problem
+				Przepraszamy, strona, której szukasz, nie istnieje. Jeśli uważasz, że
+					coś jest uszkodzone zgłoś problem
 				</p>
-				<a href='/' className='header__btn btn-special-animation'>
-					return home
-				</a>
-				<Link to="/">Kliknij mnieee</Link>
+				<Link to="/" className='header__btn btn-special-animation'>Menu Główne</Link>
 
 			</div>
 

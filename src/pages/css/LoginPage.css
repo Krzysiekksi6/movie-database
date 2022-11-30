@@ -1,21 +1,19 @@
 .login,
 .register {
-	position: relative;
 	color: #eeeeee;
-	height: 100%;
 	padding: 6em 2em;
 	background-color: #393e46;
-	overflow: hidden;
 }
 
 .register {
-	padding: 4em 2em;
+	padding: 3em 2em;
 }
 
 .register .login__form-btn {
 	padding: 0.4em 0.8em;
 }
-.login-heading {
+.login-heading,
+.register-heading {
 	font-size: 2rem;
 	text-transform: uppercase;
 	text-align: center;
@@ -83,34 +81,37 @@
 @media (min-width: 768px) {
 	.login,
 	.register {
-		padding: 7em 6em;
+		height: 940px;
 	}
 
-	.login__form,
-	.login-heading {
-		margin-top: 15px;
+	.login-heading,
+	.register-heading {
+		margin-top: 100px;
 	}
 }
 
 @media (min-width: 992px) {
 	.login,
 	.register {
-		padding-left: 8em;
-		padding-right: 8em;
+		height: auto;
 	}
-
-	.login__form,
-	.login-heading {
-		margin-top: 10px;
+	.login__form {
+		padding: 1em 8em;
 	}
 }
 
 @media (min-width: 1200px) {
+	
+	.register-heading {
+		margin: 0.4em auto;
+	}
+
+	.login-heading {
+		margin: 0.9em auto;
+
+	}
 	.login__form-top {
 		max-width: 900px;
 		margin: 0 auto;
-		width: 100%;
 	}
-
-
 }
