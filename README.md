@@ -1,28 +1,9 @@
 # Preview
 
-## Main Page Desktop
+## Mobile View
 
-![alt text](./preview/part-3.png)
+![alt text](./preview/Mobile%20View.png)
 
-## Main Page Mobile
-
-![alt text](./preview/main-phone.png)
-
-## Main Page Mobile Nav
-
-![alt text](./preview/main-phone-2.png)
-
-## Register Page Mobile
-
-![alt text](./preview/register-phone.png)
-
-## Login Page Mobile
-
-![alt text](./preview/login-phone.png)
-
-## Not Found Page
-
-![alt text](./preview/not-found.png)
 
 # Getting Started with Create React App
 
