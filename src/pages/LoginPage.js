@@ -33,7 +33,7 @@ const LoginPage = () => {
 							<button type='submit' className='login__form-btn'>
 								Zaloguj
 							</button>
-							<Link to='/register'>
+							<Link to='/signup'>
 								<button className='login__form-btn login__form-btn--register'>
 									Zajerestruj się
 								</button>

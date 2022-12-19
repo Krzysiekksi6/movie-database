@@ -66,7 +66,7 @@ const NavigationBar = () => {
 								aria-label='Search'
 							/>
 							<Button className='btn-nav btn-nav--search'>Szukaj</Button>
-							<Link to='/login' style={{ textDecoration: 'none' }}>
+							<Link to='/signin' style={{ textDecoration: 'none' }}>
 								<Button className='btn-nav'>Zaloguj</Button>
 							</Link>
 						</Form>
