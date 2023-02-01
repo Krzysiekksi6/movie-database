@@ -4,11 +4,12 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
-	height: 100vh;
 
 }
 
 #root {
 	width: 100vw;
 	height: 100vh;
+	background-color: #393e46;
+
 }

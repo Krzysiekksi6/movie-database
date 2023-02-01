@@ -1,68 +1,29 @@
-import MovieCard from './MovieCard'
-import './css/Content.css'
+import { useState, useEffect, React } from 'react';
+import axios from 'axios';
+
+import MovieCard from './MovieCard';
+import './css/Content.css';
 const Content = () => {
-	const movies = [
-		{
-			id: 1,
-			title: "Zielona Mila",
-			filmGenere: "Dramatic",
-			duration: "2h 41min",
-			releaseDate: 2001,
-			director: "Frank Darabont",
-			rates: 8.6,
-			photo: '../img/zielona-mila.jpg',
-		},
+	const URL = 'https://at.usermd.net/api/movies';
+	const [movies, setMovies] = useState([]);
 
-		{
-			id: 2,
-			title: "CZARNA PANTERA",
-			filmGenere: "Sci Fi",
-			duration: "2h 41min",
-			releaseDate: 2022,
-			director: "Ryan Coogler",
-			rates: 8.6,
-			photo: '../img/zielona-mila.jpg'
-		},
+	useEffect(() => {
+		axios.get(URL).then((response) => {
+			const movie = response.data;
+			setMovies(movie);
+		});
+	}, []);
 
-		{
-			id: 3,
-			title: "CZARNA PANTERA",
-			filmGenere: "Sci Fi",
-			duration: "2h 41min",
-			releaseDate: 2022,
-			director: "Ryan Coogler",
-			rates: 8.6,
-			photo: '../img/zielona-mila.jpg'
-		},
+	return (
+		<div className='content'>
+			{movies.map((movie, index) => {
 
-		{
-			id: 4,
-			title: "Zielona Mila",
-			filmGenere: "Dramatic",
-			duration: "2h 41min",
-			releaseDate: 2001,
-			director: "Frank Darabont",
-			rates: 8.6,
-			photo: '../img/zielona-mila.jpg'
-		},
-	]
-	return(
-		<div className="content">
-
-				<MovieCard item={movies[0]}/>
-				<MovieCard item={movies[1]}/>
-				<MovieCard item={movies[2]}/>
-
-			<MovieCard item={movies[0]}/>
-			<MovieCard item={movies[1]}/>
-			<MovieCard item={movies[2]}/>
-
-			<MovieCard item={movies[0]}/>
-			<MovieCard item={movies[1]}/>
-			<MovieCard item={movies[2]}/>
-
-
-	</div>);
+				if(movie.title && movie.title.trim()!=="" && movie.content && movie.image) {
+					return <MovieCard id={movie.id} title={movie.title} content={movie.content} image={movie.image} key={movie.id} />;
+				}
+			})}
+		</div>
+	);
 };
 
 export default Content;

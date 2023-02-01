@@ -2,18 +2,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     background-color: #222831;
-    padding: 10px 20px;
+    padding: 20px 20px;
     margin: 30px;
+    margin-top: 50px;
     border-radius: 15px;
     overflow: hidden;
 }
 
 .movie-img {
-    width: 100px;
-    height: 100%;
+    max-width: 250px;
+    max-height: 285px;
 }
 
 .movie-card__text {
@@ -23,4 +24,14 @@
 .rate-symbol {
     color: gold;
     font-size: 1.6rem;
+}
+
+.link {
+    color: #eee;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.link:hover {
+    color: #00ADB5;
 }

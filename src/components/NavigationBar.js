@@ -1,18 +1,52 @@
 import Nav from 'react-bootstrap/Nav';
+import { isExpired, decodeToken  } from "react-jwt";
 
-import { Link } from 'react-router-dom';
+import { useState, useEffect, React } from 'react';
+import axios from 'axios';
+
+import { Link, useNavigate } from 'react-router-dom';
+
 // Bootstrap Imports
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Navbar from 'react-bootstrap/Navbar';
+import Modal from 'react-bootstrap/Modal';
 // My Own Imports
 import './css/NavigationBar.css';
 import logo from './video.svg';
 import { COLORS } from '../values/colors';
 
 const NavigationBar = () => {
+	const navigate = useNavigate();
+	const user = decodeToken(localStorage.getItem('token'));
+	const isNotLogged = isExpired(localStorage.getItem('token'));
+	const [movies, setMovies] = useState([]);
+	const [searchItem, setSearchItem] = useState("");
+	const URL = 'https://at.usermd.net/api/movies';
+
+	const onUpdateField = e => {
+		e.preventDefault();
+		setSearchItem(e.target.value)
+	}
+
+	const getMovie = e => {
+		e.preventDefault();
+		const result = movies.find(movie => movie.title === searchItem)
+		console.log(result)
+		if(result !== undefined) {
+			navigate("/details", {state: result})
+		}
+	}
+
+	useEffect(() => {
+		axios.get(URL).then((response) => {
+			const movie = response.data;
+			setMovies(movie);
+		});
+	}, []);
+
 	const brand = (
 		<span className='text text-first'>
 			Film<span className='text text-second'>Web</span>
@@ -26,7 +60,7 @@ const NavigationBar = () => {
 				fixed='top'
 				style={{ backgroundColor: COLORS.dark, color: COLORS.whiteColor }}>
 				<Container style={{ color: COLORS.whiteColor }}>
-					
+
 					<Navbar.Brand href='/'>
 						<img
 							className='navigation-bar__logo'
@@ -57,18 +91,40 @@ const NavigationBar = () => {
 						<Nav
 							className='d-flex justify-content-around me-lg-auto my-lg-0'
 							style={{ maxHeight: '100px' }}
-							navbarScroll></Nav>
-						<Form className='d-flex justify-content-around my-3 my-lg-2'>
+							navbarScroll>
+						</Nav>
+						<Form className='d-flex justify-content-around my-3 my-lg-2' onSubmit={getMovie}>
 							<Form.Control
-								type='search'
+								type='text'
 								placeholder='Search'
 								className='me-auto'
 								aria-label='Search'
+								onChange={onUpdateField}
 							/>
-							<Button className='btn-nav btn-nav--search'>Szukaj</Button>
-							<Link to='/signin' style={{ textDecoration: 'none' }}>
-								<Button className='btn-nav'>Zaloguj</Button>
-							</Link>
+								<Button className='btn-nav btn-nav--search' type="submit">Szukaj</Button>
+
+							{
+								isNotLogged && <Link to='/signin' style={{ textDecoration: 'none' }}>
+									<Button className='btn-nav'>Zaloguj</Button>
+								</Link>
+							}
+							{
+								!isNotLogged &&
+								<>
+								<Link to='/signin' style={{ textDecoration: 'none' }}>
+									<Button className='btn-nav'
+											onClick={() => navigate("/add")}
+									>Dodaj Film</Button>
+								</Link>
+								<Link to='/signin' style={{ textDecoration: 'none' }}>
+									<Button className='btn-nav'
+											onClick={() => localStorage.removeItem('token')}
+									>Wyloguj</Button>
+								</Link>
+								</>
+
+							}
+
 						</Form>
 					</Navbar.Collapse>
 				</Container>
