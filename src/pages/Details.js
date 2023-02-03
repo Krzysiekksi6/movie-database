@@ -36,6 +36,17 @@ const Details = () => {
         navigate('/')
     }
 
+
+    const MIN = 0.0;
+    const MAX = 5.0;
+    const DECIMALS = 2;
+
+    const getRandomFloat = (min, max, decimals) => {
+        const number = (Math.random() * (max - min) + min).toFixed(decimals);
+
+        return parseFloat(number);
+    }
+
     return (
         <>
             <NavigationBar/>
@@ -48,6 +59,14 @@ const Details = () => {
 
                     <h2>{movie.title}</h2>
                     <p>{movie.content}</p>
+
+                    { !isNotLogged &&
+                        <p>
+					<span>
+						<i className='fa-regular fa-star rate-symbol'> {getRandomFloat(MIN,MAX,DECIMALS)} / 5.00</i>
+					</span>
+                        </p>
+                    }
                     {
                         !isNotLogged &&
                         <Button variant="danger" onClick={() => deleteMovie(movie.id)}>Usuń film</Button>

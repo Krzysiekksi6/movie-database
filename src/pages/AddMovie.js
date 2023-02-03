@@ -27,13 +27,13 @@ const AddMovie = () => {
     const validate = () => {
       const errors = {}
         if(form.title.trim() === '') {
-            errors.title = 'Email is required'
+            errors.title = 'Title is required'
         }
         if(form.image.trim() === '') {
-            errors.image = 'Login is required'
+            errors.image = 'Image URL is required'
         }
-        if(form.image.trim() === '') {
-            errors.image = 'Login is required'
+        if(form.content.trim() === '') {
+            errors.content = 'Content is required'
         }
 
         return Object.keys(errors).length === 0 ? null : errors
@@ -60,6 +60,7 @@ const AddMovie = () => {
         setErrors({errors: errors || {}});
         if(errors) {
             console.error(errors)
+           /* alert('Invalid data\n' + JSON.stringify(errors))*/
             return;
         }
         addMovieToServer(e);
