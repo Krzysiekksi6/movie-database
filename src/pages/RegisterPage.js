@@ -14,7 +14,6 @@ const RegisterPage = () => {
 		password: "",
 	});
 
-	const [errors, setErrors] = useState({});
 
 	const  onUpdateField = e => {
 		const nextFormState = {
@@ -62,7 +61,6 @@ const RegisterPage = () => {
 	const onSubmitForm = e => {
 		e.preventDefault();
 		const errors = validate();
-		setErrors({errors: errors || {}});
 		if(errors) {
 			console.error(errors)
 			return;

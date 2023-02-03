@@ -12,7 +12,6 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Navbar from 'react-bootstrap/Navbar';
-import Modal from 'react-bootstrap/Modal';
 // My Own Imports
 import './css/NavigationBar.css';
 import logo from './video.svg';
@@ -20,7 +19,6 @@ import { COLORS } from '../values/colors';
 
 const NavigationBar = () => {
 	const navigate = useNavigate();
-	const user = decodeToken(localStorage.getItem('token'));
 	const isNotLogged = isExpired(localStorage.getItem('token'));
 	const [movies, setMovies] = useState([]);
 	const [searchItem, setSearchItem] = useState("");
@@ -77,10 +75,10 @@ const NavigationBar = () => {
 							width='35'
 							height='35'
 							fill='currentColor'
-							class='bi bi-list nav-icon'
+							className='bi bi-list nav-icon'
 							viewBox='0 0 16 16'>
 							<path
-								fill-rule='evenodd'
+								fillRule='evenodd'
 								d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'
 							/>
 						</svg>
@@ -118,7 +116,13 @@ const NavigationBar = () => {
 								</Link>
 								<Link to='/signin' style={{ textDecoration: 'none' }}>
 									<Button className='btn-nav'
-											onClick={() => localStorage.removeItem('token')}
+											onClick={() => {
+												localStorage.setItem('isLogged','false');
+												localStorage.removeItem('token')
+												localStorage.removeItem('login')
+											}
+
+									}
 									>Wyloguj</Button>
 								</Link>
 								</>

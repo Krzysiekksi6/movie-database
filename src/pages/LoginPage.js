@@ -12,7 +12,6 @@ const LoginPage = () => {
 		password: '',
 	})
 
-	const [errors, setErrors] = useState({});
 
 	const onUpdateField = e => {
 		const nextFormState = {
@@ -43,9 +42,8 @@ const LoginPage = () => {
 			}
 		}).then((response) => {
 			localStorage.setItem('token',response.data.token);
-			localStorage.setItem('loginId',response.data.userId);
-			localStorage.setItem('login', form.login);
 			localStorage.setItem('isLogged','true');
+			localStorage.setItem('login', form.login);
 			window.location.href='/';
 		}).catch((error) => {
 			console.log(error.response);
@@ -55,7 +53,6 @@ const LoginPage = () => {
 	const onSubmitLogin = e => {
 		e.preventDefault()
 		const errors = validate();
-		setErrors({errors: errors || {}});
 		if(errors) {
 			console.error(errors)
 			return;
