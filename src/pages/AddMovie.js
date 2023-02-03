@@ -14,6 +14,8 @@ const AddMovie = () => {
         content: "",
     });
 
+    const [errors, setErrors] = useState({});
+
     const  onUpdateField = e => {
         const nextFormState = {
             ...form,
@@ -37,14 +39,12 @@ const AddMovie = () => {
         return Object.keys(errors).length === 0 ? null : errors
     }
 
-    const onSubmitAddMovie = (e) => {
-        e.preventDefault()
-
+    const addMovieToServer = e => {
         axios({
             method: 'post',
             url: 'https://at.usermd.net/api/movies',
             data: {
-            ...form
+                ...form
             }
         }).then((response) => {
             console.log(response);
@@ -52,6 +52,17 @@ const AddMovie = () => {
         }).catch((error) => {
             console.log(error);
         });
+    }
+
+    const onSubmitAddMovie = (e) => {
+        e.preventDefault()
+        const errors = validate();
+        setErrors({errors: errors || {}});
+        if(errors) {
+            console.error(errors)
+            return;
+        }
+        addMovieToServer(e);
 }
     return (
         <>

@@ -12,6 +12,8 @@ const LoginPage = () => {
 		password: '',
 	})
 
+	const [errors, setErrors] = useState({});
+
 	const onUpdateField = e => {
 		const nextFormState = {
 			...form,
@@ -32,10 +34,7 @@ const LoginPage = () => {
 		return Object.keys(errors).length === 0 ? null : errors
 	}
 
-	const onSubmitLogin = e => {
-		e.preventDefault()
-		const errors = validate();
-
+	const loginUser = () => {
 		axios({
 			method: 'post',
 			url: 'https://at.usermd.net/api/user/auth',
@@ -51,6 +50,19 @@ const LoginPage = () => {
 		}).catch((error) => {
 			console.log(error.response);
 		});
+	}
+
+	const onSubmitLogin = e => {
+		e.preventDefault()
+		const errors = validate();
+		setErrors({errors: errors || {}});
+		if(errors) {
+			console.error(errors)
+			return;
+		}
+
+		loginUser();
+
 	}
 	return (
 		<>

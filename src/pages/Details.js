@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 
 const Details = () => {
-    const navigate = useNavigate();
+    /*const navigate = useNavigate();*/
     const location = useLocation();
     const id = location.state.id;
     const URL = `https://at.usermd.net/api/movies/${id}`;

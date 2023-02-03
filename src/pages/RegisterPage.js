@@ -64,10 +64,10 @@ const RegisterPage = () => {
 		const errors = validate();
 		setErrors({errors: errors || {}});
 		if(errors) {
-			console.log(errors)
+			console.error(errors)
 			return;
 		}
-		createUser()
+		createUser();
 	};
 
 	return (

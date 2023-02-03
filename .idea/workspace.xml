@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32adebf2-3f42-493a-b527-594021010612" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/AddMovie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MovieCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/Content.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/css/Content.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/MovieCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/css/MovieCard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AddMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AddMovie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LoginPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/RegisterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RegisterPage.js" afterDir="false" />
     </list>
@@ -83,6 +74,9 @@
       <workItem from="1674481263685" duration="2788000" />
       <workItem from="1675181403440" duration="7588000" />
       <workItem from="1675199510414" duration="21806000" />
+      <workItem from="1675287374981" duration="711000" />
+      <workItem from="1675337592634" duration="54000" />
+      <workItem from="1675420953411" duration="1341000" />
     </task>
     <servers />
   </component>
