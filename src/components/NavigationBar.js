@@ -111,9 +111,9 @@ const NavigationBar = () => {
 							{
 								!isNotLogged &&
 								<>
-								<Link to='/signin' style={{ textDecoration: 'none' }}>
+								<Link to='/add' style={{ textDecoration: 'none' }}>
 									<Button className='btn-nav'
-											onClick={() => navigate("/add")}
+
 									>Dodaj Film</Button>
 								</Link>
 								<Link to='/signin' style={{ textDecoration: 'none' }}>

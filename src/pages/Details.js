@@ -1,13 +1,17 @@
 import { useState, useEffect, React } from 'react';
 import axios from 'axios';
-import { useNavigate, useLocation} from 'react-router-dom';
+import {useLocation, useNavigate} from 'react-router-dom';
 import NavigationBar from "../components/NavigationBar";
+import Button from 'react-bootstrap/Button';
 import Footer from "../components/Footer";
+import {decodeToken, isExpired} from "react-jwt";
 
 
 const Details = () => {
-    /*const navigate = useNavigate();*/
+    const user = decodeToken(localStorage.getItem('token'));
+    const isNotLogged = isExpired(localStorage.getItem('token'));
     const location = useLocation();
+    const navigate = useNavigate();
     const id = location.state.id;
     const URL = `https://at.usermd.net/api/movies/${id}`;
     const [movie, setMovie] = useState({});
@@ -18,6 +22,19 @@ const Details = () => {
                 setMovie(movie);
         });
     }, []);
+
+    const deleteMovie = (id) => {
+        axios({
+            method: 'delete',
+            url: `https://at.usermd.net/api/movie/${id}`,
+        }).then((response) => {
+            console.log(response.data);
+            setMovie(response.data)
+        }).catch((error) => {
+            console.log(error);
+        });
+        navigate('/')
+    }
 
     return (
         <>
@@ -31,8 +48,12 @@ const Details = () => {
 
                     <h2>{movie.title}</h2>
                     <p>{movie.content}</p>
-
+                    {
+                        !isNotLogged &&
+                        <Button variant="danger" onClick={() => deleteMovie(movie.id)}>Usuń film</Button>
+                    }
                 </div>
+
             </div>
         </div>
             <Footer/>

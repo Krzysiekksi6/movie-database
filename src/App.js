@@ -18,7 +18,7 @@ function App() {
         <Route path="signin" element={!isExpired(localStorage.getItem('token')) ? <Navigate replace to="/"/> : <LoginPage/>} />
         <Route path="signup" element={!isExpired(localStorage.getItem('token')) ? <Navigate replace to="/"/> : <RegisterPage/>} />
       <Route path="/add" element={isExpired(localStorage.getItem('token')) ? <Navigate replace to="/"/> : <AddMovie/>}/>
-      <Route path="/details" element={<Details />} />
+      <Route path="/details" element={isExpired(localStorage.getItem('token')) ? <Navigate replace to="/"/> : <Details/>}/>
     </Routes>
   );
 }

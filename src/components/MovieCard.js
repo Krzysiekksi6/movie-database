@@ -2,8 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './css/MovieCard.css';
+import {decodeToken, isExpired} from "react-jwt";
 
 const MovieCard = (props) => {
+	const user = decodeToken(localStorage.getItem('token'));
+	const isNotLogged = isExpired(localStorage.getItem('token'));
 	const URL = `/details`
 	const myData = {
 		id: props.id
@@ -34,7 +37,10 @@ const MovieCard = (props) => {
 					</span>
 
 				</p>
-				<Link to={URL} state={myData}>Kliknij po szczegóły...</Link>
+				{
+					!isNotLogged && <Link to={URL} state={myData}>Kliknij po szczegóły...</Link>
+				}
+
 
 			</div>
 		</div>
